@@ -25,11 +25,7 @@ while 1:
     #gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
     time.sleep(0.001)
     if ret == True:
-        #cv2.imshow('frame',frame)
-        #k=cv2.waitKey(1)
-        #if (k==27):
-            #cv2.destroyAllWindows()
-            #conn.close()
+
         encode_p=[int(cv2.IMWRITE_JPEG_QUALITY),20]
         result,dstrng=cv2.imencode('.jpg',frame,encode_p)       #encoding the given file
         
